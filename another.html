@@ -67,12 +67,36 @@
         console.log(array1);
         const reducer = (accumulator, currentValue) => accumulator + currentValue;
         console.log(array1.reduce(reducer));
-        alert(array1.reduce(reducer));
+       // alert(array1.reduce(reducer));
          
             var total = 0;
     for(values in radioValue) {
         total += radioValue[i];
     }
+
+    var fail = document.getElementById('resultado-fail');
+    var res1 = document.getElementById('resultado1')
+    var res2 = document.getElementById('resultado2')
+    var res3 = document.getElementById('resultado3')
+    var res4 = document.getElementById('resultado4')
+
+    /*if(radioValue == "NaN") {
+        fail.style.display('block');
+    } */
+
+    if(radioValue <= 20) {
+        res1.style.display('block');
+    }
+    if(radioValue >= 20 || radioValue <= 30 ) {
+        res1.style.display('block');
+    }
+    if(radioValue -= 20) {
+        res1.style.display('block');
+    }
+    if(radioValue -= 20) {
+        res1.style.display('block');
+    }
+    document.getElementById('score-value').innerHTML = total;
     //console.log("total is: " + total)
         });
     });
@@ -494,21 +518,38 @@ crossorigin="anonymous"></script>
                     <div class="form-card">
                         <div class="row">
                             <div class="col-7">
-                                <h2 class="fs-title">Finish:</h2>
+                                <h2 class="fs-title">Final</h2>
                             </div>
                             <div class="col-5">
-                                <h2 class="steps">Passo  ? - 4</h2>
+                                <h1 class="steps">Encerramento</h1>
                             </div>
                         </div> <br><br>
-                        <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
+                        <h2 class="purple-text text-center"><strong>Resultado:</strong></h2> <br>
                         <div class="row justify-content-center">
-                            <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image"> </div>
-                        </div> <br><br>
-                        <div class="row justify-content-center">
-                            <div class="col-7 text-center">
-                                <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
+
+                            <div id="resultado-fail">
+                                <h1>Ops! Parece que você não respondeu todas as questões!</h1>
+                                <span class="score">Pontuação: </span><span id="score-value"></span>
+                                <span>Se sua Pontuação for NaN quer dizer que você não respondeu todas</span>
                             </div>
-                        </div>
+                            <div id="resultado1">
+                                <h1>Teemo Chernobyl pegando fogo!</h1>
+                                <span class="score">Pontuação: </span><span id="score-value"></span>
+                            </div>
+                            <div id="resultado2">
+                                <h1>Quase uma pessoa decente!</h1>
+                                <span class="score">Pontuação: </span><span id="score-value"></span>
+                            </div>
+                            <div id="resultado3">
+                                <h1>É...quase um jogador normal</h1>
+                                <span class="score">Pontuação: </span><span id="score-value"></span>
+                            </div>
+                            <div id="resultado4">
+                                <h1>Caraca! Você é um jogador exemplar</h1>
+                                <span class="score">Pontuação: </span><span id="score-value"></span>
+                            </div>
+                        </div> <br><br>
+                    
                     </div>
                     
 

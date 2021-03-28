@@ -120,7 +120,8 @@ p {
 
 .purple-text {
     color: #673AB7;
-    font-weight: normal
+    font-weight: normal;
+    text-align: center;
 }
 
 .steps {
@@ -228,6 +229,22 @@ p {
 
 input[type="checkbox"] {
     width: 2% imp !important;
+}
+
+#resultado-fail {
+    display: none;
+}
+#resultado1 {
+    display: none;
+}
+#resultado2 {
+    display: none;
+}
+#resultado3 {
+    display: none;
+}
+#resultado4 {
+    display: none;
 }
 
 
