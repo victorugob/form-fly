@@ -241,4 +241,7 @@ input[type="checkbox"] {
     #progressbar {
         display: none;
     }
+    #msform .action-button, #msform .action-button-previous {
+        width: 45% !important;
+    }
 }
