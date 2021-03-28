@@ -7,100 +7,103 @@
 <title>Fly</title>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $("input[type='button']").click(function(){
-            var radioValue = [
-            Number($("input[name='1resposta']:checked").val()), 
-            Number($("input[name='2resposta']:checked").val()), 
-            Number($("input[name='3resposta']:checked").val()),
-            Number($("input[name='4resposta']:checked").val()),
-            Number($("input[name='5resposta']:checked").val()),
-            Number($("input[name='6resposta']:checked").val()),
-            Number($("input[name='7resposta']:checked").val()),
-            Number($("input[name='8resposta']:checked").val()),
-            Number($("input[name='9resposta']:checked").val()),
-            Number($("input[name='10resposta']:checked").val()),
-            Number($("input[name='11resposta']:checked").val()),
-            Number($("input[name='12resposta']:checked").val()),
-            Number($("input[name='13resposta']:checked").val()),
-            Number($("input[name='14resposta']:checked").val()),
-            Number($("input[name='15resposta']:checked").val()),
-            Number($("input[name='16resposta']:checked").val()),
-            Number($("input[name='17resposta']:checked").val()),
-            Number($("input[name='18resposta']:checked").val()),
-            Number($("input[name='19resposta']:checked").val()),
-            Number($("input[name='20resposta']:checked").val()),
-            Number($("input[name='21resposta']:checked").val()),
-            Number($("input[name='22resposta']:checked").val()),
-            Number($("input[name='23resposta']:checked").val()),
-            Number($("input[name='24resposta']:checked").val()),
-            Number($("input[name='25resposta']:checked").val()),
-            Number($("input[name='26resposta']:checked").val()),
-            Number($("input[name='27resposta']:checked").val()),
-            Number($("input[name='28resposta']:checked").val()),
-            Number($("input[name='29resposta']:checked").val()),
-            Number($("input[name='30resposta']:checked").val()),
-            Number($("input[name='31resposta']:checked").val()),
-            Number($("input[name='32resposta']:checked").val()),
-            Number($("input[name='33resposta']:checked").val()),
-            Number($("input[name='34resposta']:checked").val()),
-            Number($("input[name='35resposta']:checked").val()),
-            Number($("input[name='36resposta']:checked").val()),
-            Number($("input[name='37resposta']:checked").val()),
-            Number($("input[name='38resposta']:checked").val()),
-            Number($("input[name='39resposta']:checked").val()),
-            Number($("input[name='40resposta']:checked").val()),
-            Number($("input[name='41resposta']:checked").val()),
-            Number($("input[name='42resposta']:checked").val()),
-            Number($("input[name='43resposta']:checked").val()),
-            Number($("input[name='44resposta']:checked").val()),
-            Number($("input[name='45resposta']:checked").val()),
-            Number($("input[name='46resposta']:checked").val()),
-            Number($("input[name='47resposta']:checked").val()),
-            Number($("input[name='48resposta']:checked").val()),
-            Number($("input[name='49resposta']:checked").val()),
-            Number($("input[name='50resposta']:checked").val()),
-            Number($("input[name='51resposta']:checked").val())
+$(document).ready(function(){
+    $("input[type='button']").click(function(){
+        var radioValue = [
+        Number($("input[name='1resposta']:checked").val()), 
+        Number($("input[name='2resposta']:checked").val()), 
+        Number($("input[name='3resposta']:checked").val()),
+        Number($("input[name='4resposta']:checked").val()),
+        Number($("input[name='5resposta']:checked").val()),
+        Number($("input[name='6resposta']:checked").val()),
+        Number($("input[name='7resposta']:checked").val()),
+        Number($("input[name='8resposta']:checked").val()),
+        Number($("input[name='9resposta']:checked").val()),
+        Number($("input[name='10resposta']:checked").val()),
+        Number($("input[name='11resposta']:checked").val()),
+        Number($("input[name='12resposta']:checked").val()),
+        Number($("input[name='13resposta']:checked").val()),
+        Number($("input[name='14resposta']:checked").val()),
+        Number($("input[name='15resposta']:checked").val()),
+        Number($("input[name='16resposta']:checked").val()),
+        Number($("input[name='17resposta']:checked").val()),
+        Number($("input[name='18resposta']:checked").val()),
+        Number($("input[name='19resposta']:checked").val()),
+        Number($("input[name='20resposta']:checked").val()),
+        Number($("input[name='21resposta']:checked").val()),
+        Number($("input[name='22resposta']:checked").val()),
+        Number($("input[name='23resposta']:checked").val()),
+        Number($("input[name='24resposta']:checked").val()),
+        Number($("input[name='25resposta']:checked").val()),
+        Number($("input[name='26resposta']:checked").val()),
+        Number($("input[name='27resposta']:checked").val()),
+        Number($("input[name='28resposta']:checked").val()),
+        Number($("input[name='29resposta']:checked").val()),
+        Number($("input[name='30resposta']:checked").val()),
+        Number($("input[name='31resposta']:checked").val()),
+        Number($("input[name='32resposta']:checked").val()),
+        Number($("input[name='33resposta']:checked").val()),
+        Number($("input[name='34resposta']:checked").val()),
+        Number($("input[name='35resposta']:checked").val()),
+        Number($("input[name='36resposta']:checked").val()),
+        Number($("input[name='37resposta']:checked").val()),
+        Number($("input[name='38resposta']:checked").val()),
+        Number($("input[name='39resposta']:checked").val()),
+        Number($("input[name='40resposta']:checked").val()),
+        Number($("input[name='41resposta']:checked").val()),
+        Number($("input[name='42resposta']:checked").val()),
+        Number($("input[name='43resposta']:checked").val()),
+        Number($("input[name='44resposta']:checked").val()),
+        Number($("input[name='45resposta']:checked").val()),
+        Number($("input[name='46resposta']:checked").val()),
+        Number($("input[name='47resposta']:checked").val()),
+        Number($("input[name='48resposta']:checked").val()),
+        Number($("input[name='49resposta']:checked").val()),
+        Number($("input[name='50resposta']:checked").val()),
+        Number($("input[name='51resposta']:checked").val())
 
-        ];
-        const array1 = radioValue
-        console.log(array1);
-        const reducer = (accumulator, currentValue) => accumulator + currentValue;
-        console.log(array1.reduce(reducer));
-       // alert(array1.reduce(reducer));
-         
-            var total = 0;
-    for(values in radioValue) {
+    ];
+    const array1 = radioValue
+    console.log(array1);
+    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+    console.log(array1.reduce(reducer));
+    var result = array1.reduce(reducer);
+    // alert(array1.reduce(reducer));
+        
+        var total = 0;
+        for(values in radioValue) {
         total += radioValue[i];
-    }
+}
 
-    var fail = document.getElementById('resultado-fail');
-    var res1 = document.getElementById('resultado1')
-    var res2 = document.getElementById('resultado2')
-    var res3 = document.getElementById('resultado3')
-    var res4 = document.getElementById('resultado4')
+var fail = document.getElementById('resultado-fail');
+var res1 = document.getElementById('resultado1')
+var res2 = document.getElementById('resultado2')
+var res3 = document.getElementById('resultado3')
+var res4 = document.getElementById('resultado4')
 
-    /*if(radioValue == "NaN") {
-        fail.style.display('block');
-    } */
+ if(isNaN(array1.reduce(reducer))) {
+    $('#resultado-fail').css('display','block');
+ } 
 
-    if(radioValue <= 20) {
-        res1.style.display('block');
-    }
-    if(radioValue >= 20 || radioValue <= 30 ) {
-        res1.style.display('block');
-    }
-    if(radioValue -= 20) {
-        res1.style.display('block');
-    }
-    if(radioValue -= 20) {
-        res1.style.display('block');
-    }
-    document.getElementById('score-value').innerHTML = radioValue;
-    //console.log("total is: " + total)
-        });
+
+
+if(array1.reduce(reducer) <= 20) {
+    $('#resultado1').css('display','block');
+}
+if(radioValue >= 20 || radioValue <= 30 ) {
+    $('#resultado2').css('display','block');
+}
+if(radioValue -= 20) {
+    $('#resultado3').css('display','block');
+}
+if(radioValue -= 20) {
+    $('#resultado4').css('display','block');
+}
+document.getElementById('score-value').innerHTML = array1.reduce(reducer);
+//console.log("total is: " + total)
     });
-   
+});
+
 </script>
 </head>
 <body>
@@ -110,47 +113,47 @@ integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
 crossorigin="anonymous"></script>
 <div class="container-fluid form-adjust">
 <div class="row justify-content-center">
-    <div class="col-11 col-sm-10 col-md-10 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
-        <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
-            <h2 id="heading">Formulário do Menino Fly</h2>
-            <form id="msform">
-                <!-- progressbar -->
-                <ul id="progressbar">
-                    <li class="active" id="account"><strong>Sessão 1</strong></li>
-                    <li id="personal"><strong>Sessão 2</strong></li>
-                    <li id="payment"><strong>Sessão 3</strong></li>
-                    <li id="confirm"><strong>Sessão 4</strong></li>
-                    <li id="end"><strong>Sessão 5</strong></li>
-                </ul>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                </div> <br> <!-- fieldsets -->
-                <fieldset>
-                    <div class="form-card">
-                        <div class="row">
-                            <div class="col-7">
-                                
-                            </div>
-                            <div class="col-5">
-                                <h2 class="steps">Passo 1 - 6</h2>
-                            </div>
-                        </div> 
-                        
-                        <h2 class="fs-title">1. Divirto-me quando estou em atividade em grupo.
-                                </h2>
-                    <input type="radio" name="1resposta" value="1">Nunca<br>      
-                    <input type="radio" name="1resposta" value="2">Pouco<br>      
-                    <input type="radio" name="1resposta" value="3">Muito<br>   
-                    <input type="radio" name="1resposta" value="4">Sempre<br>   
-                    <h2 class="fs-title">2. Participar de atividades que envolvam superação e desafios me empolgam.
+<div class="col-11 col-sm-10 col-md-10 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
+    <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+        <h2 id="heading">Formulário do Menino Fly</h2>
+        <form id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active" id="account"><strong>Sessão 1</strong></li>
+                <li id="personal"><strong>Sessão 2</strong></li>
+                <li id="payment"><strong>Sessão 3</strong></li>
+                <li id="confirm"><strong>Sessão 4</strong></li>
+                <li id="end"><strong>Sessão 5</strong></li>
+            </ul>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+            </div> <br> <!-- fieldsets -->
+            <fieldset>
+                <div class="form-card">
+                    <div class="row">
+                        <div class="col-7">
+                            
+                        </div>
+                        <div class="col-5">
+                            <h2 class="steps">Passo 1 - 6</h2>
+                        </div>
+                    </div> 
+                    
+                    <h2 class="fs-title">1. Divirto-me quando estou em atividade em grupo.
+                            </h2>
+                <input type="radio" name="1resposta" value="1">Nunca<br>      
+                <input type="radio" name="1resposta" value="2">Pouco<br>      
+                <input type="radio" name="1resposta" value="3">Muito<br>   
+                <input type="radio" name="1resposta" value="4">Sempre<br>   
+                <h2 class="fs-title">2. Participar de atividades que envolvam superação e desafios me empolgam.
 
-                    </h2>
-        <input type="radio" name="2resposta" value="1">Nunca<br>      
-        <input type="radio" name="2resposta" value="2">Pouco<br>      
-        <input type="radio" name="2resposta" value="3">Muito<br>   
-        <input type="radio" name="2resposta" value="4">Sempre<br>   
-        <h2 class="fs-title">3. Às vezes descumprir regras é comum no esporte.
-        </h2>
+                </h2>
+    <input type="radio" name="2resposta" value="1">Nunca<br>      
+    <input type="radio" name="2resposta" value="2">Pouco<br>      
+    <input type="radio" name="2resposta" value="3">Muito<br>   
+    <input type="radio" name="2resposta" value="4">Sempre<br>   
+    <h2 class="fs-title">3. Às vezes descumprir regras é comum no esporte.
+    </h2>
 <input type="radio" name="3resposta" value="-1">Nunca<br>      
 <input type="radio" name="3resposta" value="-2">Pouco<br>      
 <input type="radio" name="3resposta" value="-3">Muito<br>   
@@ -198,27 +201,27 @@ crossorigin="anonymous"></script>
 <input type="radio" name="10resposta" value="-3">Muito<br>   
 <input type="radio" name="10resposta" value="-4">Sempre<br>   
 
-                    </div> <input type="button" name="next" class="next action-button" value="Next" />
-                </fieldset>
-                <fieldset>
-                    <div class="form-card">
-                        <div class="row">
-                            <div class="col-7">
-                                <!-- <h2 class="fs-title">Sessão - 2</h2> -->
-                            </div>
-                            <div class="col-5">
-                                <h2 class="steps">Passo 2 - 6</h2>
-                            </div>
-                        </div><h2 class="fs-title">11. Abandono aquilo que desejo por medo de ser debochado por outros.
+                </div> <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <div class="form-card">
+                    <div class="row">
+                        <div class="col-7">
+                            <!-- <h2 class="fs-title">Sessão - 2</h2> -->
+                        </div>
+                        <div class="col-5">
+                            <h2 class="steps">Passo 2 - 6</h2>
+                        </div>
+                    </div><h2 class="fs-title">11. Abandono aquilo que desejo por medo de ser debochado por outros.
 
-                        </h2>
-            <input type="radio" name="11resposta" value="-1">Nunca<br>      
-            <input type="radio" name="11resposta" value="-2">Pouco<br>      
-            <input type="radio" name="11resposta" value="-3">Muito<br>   
-            <input type="radio" name="11resposta" value="-4">Sempre<br>   
-            <h2 class="fs-title">12. Antes de agir, penso na repercussão disso com meus colegas de equipe.
+                    </h2>
+        <input type="radio" name="11resposta" value="-1">Nunca<br>      
+        <input type="radio" name="11resposta" value="-2">Pouco<br>      
+        <input type="radio" name="11resposta" value="-3">Muito<br>   
+        <input type="radio" name="11resposta" value="-4">Sempre<br>   
+        <h2 class="fs-title">12. Antes de agir, penso na repercussão disso com meus colegas de equipe.
 
-            </h2>
+        </h2>
 <input type="radio" name="12resposta" value="1">Nunca<br>      
 <input type="radio" name="12resposta" value="2">Pouco<br>      
 <input type="radio" name="12resposta" value="3">Muito<br>   
@@ -273,303 +276,303 @@ crossorigin="anonymous"></script>
 <input type="radio" name="20resposta" value="-3">Muito<br>   
 <input type="radio" name="20resposta" value="-4">Sempre<br>   
 
-                    </div> <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-                </fieldset>
-                <fieldset>
-                    <div class="form-card">
-                        <div class="row">
-                            <div class="col-7">
-                            </div>
-                            <div class="col-5">
-                                <h2 class="steps">Passo 3 - 6</h2>
-                            </div>
-                        </div> 
-                        <h2 class="fs-title">21. Frequentemente me comunico de forma agressiva com meus adversários para intimidá-los.
-                        </h2>
-                        <input type="radio" name="21resposta" value="-1">Nunca<br>      
-                        <input type="radio" name="21resposta" value="-2">Pouco<br>      
-                        <input type="radio" name="21resposta" value="-3">Muito<br>   
-                        <input type="radio" name="21resposta" value="-4">Sempre<br>   
-                        <h2 class="fs-title">22. De modo geral, acredito que as pessoas têm boas intenções quando trabalham em equipe.
-                        </h2>
-                        <input type="radio" name="22resposta" value="1">Nunca<br>      
-                        <input type="radio" name="22resposta" value="2">Pouco<br>      
-                        <input type="radio" name="22resposta" value="3">Muito<br>   
-                        <input type="radio" name="22resposta" value="4">Sempre<br>   
-                        <h2 class="fs-title">23. Já pensei seriamente em desistir de jogar e competir.
-                        </h2>
-                        <input type="radio" name="23resposta" value="-1">Nunca<br>      
-                        <input type="radio" name="23resposta" value="-2">Pouco<br>      
-                        <input type="radio" name="23resposta" value="-3">Muito<br>   
-                        <input type="radio" name="23resposta" value="-4">Sempre<br>   
-                        <h2 class="fs-title">24. Eu me divirto em apontar os erros dos meus adversários.
-                        </h2>
-                        <input type="radio" name="24resposta" value="-1">Nunca<br>      
-                        <input type="radio" name="24resposta" value="-2">Pouco<br>      
-                        <input type="radio" name="24resposta" value="-3">Muito<br>   
-                        <input type="radio" name="24resposta" value="-4">Sempre<br>   
-                        <h2 class="fs-title">25. Quando estou com euforia ou raiva em uma competição, pode acontecer que eu não cumpra as regras à risca.
-                        </h2>
-                        <input type="radio" name="25resposta" value="-1">Nunca<br>      
-                        <input type="radio" name="25resposta" value="-2">Pouco<br>      
-                        <input type="radio" name="25resposta" value="-3">Muito<br>   
-                        <input type="radio" name="25resposta" value="-4">Sempre<br>   
-                        <h2 class="fs-title">26. Procuro fazer com que as pessoas da minha equipe se sintam bem.
-                        </h2>
-                        <input type="radio" name="26resposta" value="1">Nunca<br>      
-                        <input type="radio" name="26resposta" value="2">Pouco<br>      
-                        <input type="radio" name="26resposta" value="3">Muito<br>   
-                        <input type="radio" name="26resposta" value="4">Sempre<br>   
-                        <h2 class="fs-title">27. Acredito que o treino deveria ocorrer em menor frequência.
-                        </h2>
-                        <input type="radio" name="27resposta" value="-1">Nunca<br>      
-                        <input type="radio" name="27resposta" value="-2">Pouco<br>      
-                        <input type="radio" name="27resposta" value="-3">Muito<br>   
-                        <input type="radio" name="27resposta" value="-4">Sempre<br>   
-                        <h2 class="fs-title">28. Fico com raiva rapidamente quando algo ruim me acontece no treino ou na partida e isso me atrapalha.
-                        </h2>
-                        <input type="radio" name="28resposta" value="-1">Nunca<br>      
-                        <input type="radio" name="28resposta" value="-2">Pouco<br>      
-                        <input type="radio" name="28resposta" value="-3">Muito<br>   
-                        <input type="radio" name="28resposta" value="-4">Sempre<br>   
-                        <h2 class="fs-title">29. Se algum adversário me enganar, deverá receber na mesma moeda.
-                        </h2>
-                        <input type="radio" name="29resposta" value="-1">Nunca<br>      
-                        <input type="radio" name="29resposta" value="-2">Pouco<br>      
-                        <input type="radio" name="29resposta" value="-3">Muito<br>   
-                        <input type="radio" name="29resposta" value="-4">Sempre<br>   
-                        <h2 class="fs-title">30. Preocupo-me com meus colegas de equipe.
-                        </h2>
-                        <input type="radio" name="30resposta" value="1">Nunca<br>      
-                        <input type="radio" name="30resposta" value="2">Pouco<br>      
-                        <input type="radio" name="30resposta" value="3">Muito<br>   
-                        <input type="radio" name="30resposta" value="4">Sempre<br>   
-                    </div> <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-                </fieldset>
-                <fieldset>
-                    <div class="form-card">
-                        <div class="row">
-                            <div class="col-7">
-                            </div>
-                            <div class="col-5">
-                                <h2 class="steps">Passo 4 - 6</h2>
-                            </div>
-                        </div> 
-                        <h2 class="fs-title">31. Fico irritado quando percebo as intenções dos meus adversários.
+                </div> <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+            </fieldset>
+            <fieldset>
+                <div class="form-card">
+                    <div class="row">
+                        <div class="col-7">
+                        </div>
+                        <div class="col-5">
+                            <h2 class="steps">Passo 3 - 6</h2>
+                        </div>
+                    </div> 
+                    <h2 class="fs-title">21. Frequentemente me comunico de forma agressiva com meus adversários para intimidá-los.
+                    </h2>
+                    <input type="radio" name="21resposta" value="-1">Nunca<br>      
+                    <input type="radio" name="21resposta" value="-2">Pouco<br>      
+                    <input type="radio" name="21resposta" value="-3">Muito<br>   
+                    <input type="radio" name="21resposta" value="-4">Sempre<br>   
+                    <h2 class="fs-title">22. De modo geral, acredito que as pessoas têm boas intenções quando trabalham em equipe.
+                    </h2>
+                    <input type="radio" name="22resposta" value="1">Nunca<br>      
+                    <input type="radio" name="22resposta" value="2">Pouco<br>      
+                    <input type="radio" name="22resposta" value="3">Muito<br>   
+                    <input type="radio" name="22resposta" value="4">Sempre<br>   
+                    <h2 class="fs-title">23. Já pensei seriamente em desistir de jogar e competir.
+                    </h2>
+                    <input type="radio" name="23resposta" value="-1">Nunca<br>      
+                    <input type="radio" name="23resposta" value="-2">Pouco<br>      
+                    <input type="radio" name="23resposta" value="-3">Muito<br>   
+                    <input type="radio" name="23resposta" value="-4">Sempre<br>   
+                    <h2 class="fs-title">24. Eu me divirto em apontar os erros dos meus adversários.
+                    </h2>
+                    <input type="radio" name="24resposta" value="-1">Nunca<br>      
+                    <input type="radio" name="24resposta" value="-2">Pouco<br>      
+                    <input type="radio" name="24resposta" value="-3">Muito<br>   
+                    <input type="radio" name="24resposta" value="-4">Sempre<br>   
+                    <h2 class="fs-title">25. Quando estou com euforia ou raiva em uma competição, pode acontecer que eu não cumpra as regras à risca.
+                    </h2>
+                    <input type="radio" name="25resposta" value="-1">Nunca<br>      
+                    <input type="radio" name="25resposta" value="-2">Pouco<br>      
+                    <input type="radio" name="25resposta" value="-3">Muito<br>   
+                    <input type="radio" name="25resposta" value="-4">Sempre<br>   
+                    <h2 class="fs-title">26. Procuro fazer com que as pessoas da minha equipe se sintam bem.
+                    </h2>
+                    <input type="radio" name="26resposta" value="1">Nunca<br>      
+                    <input type="radio" name="26resposta" value="2">Pouco<br>      
+                    <input type="radio" name="26resposta" value="3">Muito<br>   
+                    <input type="radio" name="26resposta" value="4">Sempre<br>   
+                    <h2 class="fs-title">27. Acredito que o treino deveria ocorrer em menor frequência.
+                    </h2>
+                    <input type="radio" name="27resposta" value="-1">Nunca<br>      
+                    <input type="radio" name="27resposta" value="-2">Pouco<br>      
+                    <input type="radio" name="27resposta" value="-3">Muito<br>   
+                    <input type="radio" name="27resposta" value="-4">Sempre<br>   
+                    <h2 class="fs-title">28. Fico com raiva rapidamente quando algo ruim me acontece no treino ou na partida e isso me atrapalha.
+                    </h2>
+                    <input type="radio" name="28resposta" value="-1">Nunca<br>      
+                    <input type="radio" name="28resposta" value="-2">Pouco<br>      
+                    <input type="radio" name="28resposta" value="-3">Muito<br>   
+                    <input type="radio" name="28resposta" value="-4">Sempre<br>   
+                    <h2 class="fs-title">29. Se algum adversário me enganar, deverá receber na mesma moeda.
+                    </h2>
+                    <input type="radio" name="29resposta" value="-1">Nunca<br>      
+                    <input type="radio" name="29resposta" value="-2">Pouco<br>      
+                    <input type="radio" name="29resposta" value="-3">Muito<br>   
+                    <input type="radio" name="29resposta" value="-4">Sempre<br>   
+                    <h2 class="fs-title">30. Preocupo-me com meus colegas de equipe.
+                    </h2>
+                    <input type="radio" name="30resposta" value="1">Nunca<br>      
+                    <input type="radio" name="30resposta" value="2">Pouco<br>      
+                    <input type="radio" name="30resposta" value="3">Muito<br>   
+                    <input type="radio" name="30resposta" value="4">Sempre<br>   
+                </div> <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+            </fieldset>
+            <fieldset>
+                <div class="form-card">
+                    <div class="row">
+                        <div class="col-7">
+                        </div>
+                        <div class="col-5">
+                            <h2 class="steps">Passo 4 - 6</h2>
+                        </div>
+                    </div> 
+                    <h2 class="fs-title">31. Fico irritado quando percebo as intenções dos meus adversários.
 
-                        </h2>
-                        <input type="radio" name="31resposta" value="-1">Nunca<br>      
-                        <input type="radio" name="31resposta" value="-2">Pouco<br>      
-                        <input type="radio" name="31resposta" value="-3">Muito<br>   
-                        <input type="radio" name="31resposta" value="-4">Sempre<br>   
-                        <h2 class="fs-title">32. No treino procuro achar uma melhor forma de realizar a tarefa para melhorar meu desempenho.
-                        </h2>
-                        <input type="radio" name="32resposta" value="1">Nunca<br>      
-                        <input type="radio" name="32resposta" value="2">Pouco<br>      
-                        <input type="radio" name="32resposta" value="3">Muito<br>   
-                        <input type="radio" name="32resposta" value="4">Sempre<br>   
-                        <h2 class="fs-title">33. Se eu precisar descumprir alguma regra para ganhar a partida, eu farei isso.
-                        </h2>
-                        <input type="radio" name="33resposta" value="-1">Nunca<br>      
-                        <input type="radio" name="33resposta" value="-2">Pouco<br>      
-                        <input type="radio" name="33resposta" value="-3">Muito<br>   
-                        <input type="radio" name="33resposta" value="-4">Sempre<br>   
-                        <h2 class="fs-title">34. Fico desanimado com frequência.
-                        </h2>
-                        <input type="radio" name="34resposta" value="-1">Nunca<br>      
-                        <input type="radio" name="34resposta" value="-2">Pouco<br>      
-                        <input type="radio" name="34resposta" value="-3">Muito<br>   
-                        <input type="radio" name="34resposta" value="4">Sempre<br>   
-                        <h2 class="fs-title">35. Procuro colaborar com algum colega quando observo-o tendo alguma dificuldade.
-                        </h2>
-                        <input type="radio" name="35resposta" value="1">Nunca<br>      
-                        <input type="radio" name="35resposta" value="2">Pouco<br>      
-                        <input type="radio" name="35resposta" value="3">Muito<br>   
-                        <input type="radio" name="35resposta" value="4">Sempre<br>   
-                        <h2 class="fs-title">36. Respeito os sentimentos alheios.
-                        </h2>
-                        <input type="radio" name="36resposta" value="1">Nunca<br>      
-                        <input type="radio" name="36resposta" value="2">Pouco<br>      
-                        <input type="radio" name="36resposta" value="3">Muito<br>   
-                        <input type="radio" name="36resposta" value="4">Sempre<br>   
-                        <h2 class="fs-title">37. Xingo os jogadores do meu time quando eles erram.
-                        </h2>
-                        <input type="radio" name="37resposta" value="-1">Nunca<br>      
-                        <input type="radio" name="37resposta" value="-2">Pouco<br>      
-                        <input type="radio" name="37resposta" value="-3">Muito<br>   
-                        <input type="radio" name="37resposta" value="-4">Sempre<br>   
-                        <h2 class="fs-title">38. tenho amigos até hoje que conheci no jogo.
-                        </h2>
-                        <input type="radio" name="38resposta" value="1">Nunca<br>      
-                        <input type="radio" name="38resposta" value="2">Pouco<br>      
-                        <input type="radio" name="38resposta" value="3">Muito<br>   
-                        <input type="radio" name="38resposta" value="4">Sempre<br>   
-                        <h2 class="fs-title">39. Continuo a partida, mesmo com a derrota eminente.
-                        </h2>
-                        <input type="radio" name="39resposta" value="1">Nunca<br>      
-                        <input type="radio" name="39resposta" value="2">Pouco<br>      
-                        <input type="radio" name="39resposta" value="3">Muito<br>   
-                        <input type="radio" name="39resposta" value="4">Sempre<br>   
-                        <h2 class="fs-title">40. Quando jogo em equipe sinto que faço parte de um time.
-                        </h2>
-                        <input type="radio" name="40resposta" value="1">Nunca<br>      
-                        <input type="radio" name="40resposta" value="2">Pouco<br>      
-                        <input type="radio" name="40resposta" value="3">Muito<br>   
-                        <input type="radio" name="40resposta" value="4">Sempre<br>   
-                    </div> <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-                </fieldset>
-                <fieldset>
-                    <div class="form-card">
-                        <div class="row">
-                            <div class="col-7">
-                            </div>
-                            <div class="col-5">
-                                <h2 class="steps">Passo 5 - 6</h2>
-                            </div>
-                        </div> 
-                        <h2 class="fs-title">41. Penso que minhas atitudes refletem em outros jogadores.
+                    </h2>
+                    <input type="radio" name="31resposta" value="-1">Nunca<br>      
+                    <input type="radio" name="31resposta" value="-2">Pouco<br>      
+                    <input type="radio" name="31resposta" value="-3">Muito<br>   
+                    <input type="radio" name="31resposta" value="-4">Sempre<br>   
+                    <h2 class="fs-title">32. No treino procuro achar uma melhor forma de realizar a tarefa para melhorar meu desempenho.
+                    </h2>
+                    <input type="radio" name="32resposta" value="1">Nunca<br>      
+                    <input type="radio" name="32resposta" value="2">Pouco<br>      
+                    <input type="radio" name="32resposta" value="3">Muito<br>   
+                    <input type="radio" name="32resposta" value="4">Sempre<br>   
+                    <h2 class="fs-title">33. Se eu precisar descumprir alguma regra para ganhar a partida, eu farei isso.
+                    </h2>
+                    <input type="radio" name="33resposta" value="-1">Nunca<br>      
+                    <input type="radio" name="33resposta" value="-2">Pouco<br>      
+                    <input type="radio" name="33resposta" value="-3">Muito<br>   
+                    <input type="radio" name="33resposta" value="-4">Sempre<br>   
+                    <h2 class="fs-title">34. Fico desanimado com frequência.
+                    </h2>
+                    <input type="radio" name="34resposta" value="-1">Nunca<br>      
+                    <input type="radio" name="34resposta" value="-2">Pouco<br>      
+                    <input type="radio" name="34resposta" value="-3">Muito<br>   
+                    <input type="radio" name="34resposta" value="4">Sempre<br>   
+                    <h2 class="fs-title">35. Procuro colaborar com algum colega quando observo-o tendo alguma dificuldade.
+                    </h2>
+                    <input type="radio" name="35resposta" value="1">Nunca<br>      
+                    <input type="radio" name="35resposta" value="2">Pouco<br>      
+                    <input type="radio" name="35resposta" value="3">Muito<br>   
+                    <input type="radio" name="35resposta" value="4">Sempre<br>   
+                    <h2 class="fs-title">36. Respeito os sentimentos alheios.
+                    </h2>
+                    <input type="radio" name="36resposta" value="1">Nunca<br>      
+                    <input type="radio" name="36resposta" value="2">Pouco<br>      
+                    <input type="radio" name="36resposta" value="3">Muito<br>   
+                    <input type="radio" name="36resposta" value="4">Sempre<br>   
+                    <h2 class="fs-title">37. Xingo os jogadores do meu time quando eles erram.
+                    </h2>
+                    <input type="radio" name="37resposta" value="-1">Nunca<br>      
+                    <input type="radio" name="37resposta" value="-2">Pouco<br>      
+                    <input type="radio" name="37resposta" value="-3">Muito<br>   
+                    <input type="radio" name="37resposta" value="-4">Sempre<br>   
+                    <h2 class="fs-title">38. tenho amigos até hoje que conheci no jogo.
+                    </h2>
+                    <input type="radio" name="38resposta" value="1">Nunca<br>      
+                    <input type="radio" name="38resposta" value="2">Pouco<br>      
+                    <input type="radio" name="38resposta" value="3">Muito<br>   
+                    <input type="radio" name="38resposta" value="4">Sempre<br>   
+                    <h2 class="fs-title">39. Continuo a partida, mesmo com a derrota eminente.
+                    </h2>
+                    <input type="radio" name="39resposta" value="1">Nunca<br>      
+                    <input type="radio" name="39resposta" value="2">Pouco<br>      
+                    <input type="radio" name="39resposta" value="3">Muito<br>   
+                    <input type="radio" name="39resposta" value="4">Sempre<br>   
+                    <h2 class="fs-title">40. Quando jogo em equipe sinto que faço parte de um time.
+                    </h2>
+                    <input type="radio" name="40resposta" value="1">Nunca<br>      
+                    <input type="radio" name="40resposta" value="2">Pouco<br>      
+                    <input type="radio" name="40resposta" value="3">Muito<br>   
+                    <input type="radio" name="40resposta" value="4">Sempre<br>   
+                </div> <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+            </fieldset>
+            <fieldset>
+                <div class="form-card">
+                    <div class="row">
+                        <div class="col-7">
+                        </div>
+                        <div class="col-5">
+                            <h2 class="steps">Passo 5 - 6</h2>
+                        </div>
+                    </div> 
+                    <h2 class="fs-title">41. Penso que minhas atitudes refletem em outros jogadores.
 
 
-                        </h2>
-                        <input type="radio" name="41resposta" value="1">Nunca<br>      
-                        <input type="radio" name="41resposta" value="2">Pouco<br>      
-                        <input type="radio" name="41resposta" value="3">Muito<br>   
-                        <input type="radio" name="41resposta" value="4">Sempre<br>   
-                        <h2 class="fs-title">42. Mantenho a calma quando algo dá errado na partida.                       </h2>
-                        <input type="radio" name="42resposta" value="1">Nunca<br>      
-                        <input type="radio" name="42resposta" value="2">Pouco<br>      
-                        <input type="radio" name="42resposta" value="3">Muito<br>   
-                        <input type="radio" name="42resposta" value="4">Sempre<br>   
-                        <h2 class="fs-title">43. Tento fazer novas amizades quando jogo.
+                    </h2>
+                    <input type="radio" name="41resposta" value="1">Nunca<br>      
+                    <input type="radio" name="41resposta" value="2">Pouco<br>      
+                    <input type="radio" name="41resposta" value="3">Muito<br>   
+                    <input type="radio" name="41resposta" value="4">Sempre<br>   
+                    <h2 class="fs-title">42. Mantenho a calma quando algo dá errado na partida.                       </h2>
+                    <input type="radio" name="42resposta" value="1">Nunca<br>      
+                    <input type="radio" name="42resposta" value="2">Pouco<br>      
+                    <input type="radio" name="42resposta" value="3">Muito<br>   
+                    <input type="radio" name="42resposta" value="4">Sempre<br>   
+                    <h2 class="fs-title">43. Tento fazer novas amizades quando jogo.
 
-                        </h2>
-                        <input type="radio" name="43resposta" value="1">Nunca<br>      
-                        <input type="radio" name="43resposta" value="2">Pouco<br>      
-                        <input type="radio" name="43resposta" value="3">Muito<br>   
-                        <input type="radio" name="43resposta" value="4">Sempre<br>   
-                        <h2 class="fs-title">44. Divido a minha conta para alcançar níveis mais altos.
-                        </h2>
-                        <input type="radio" name="44resposta" value="-1">Nunca<br>      
-                        <input type="radio" name="44resposta" value="-2">Pouco<br>      
-                        <input type="radio" name="44resposta" value="-3">Muito<br>   
-                        <input type="radio" name="44resposta" value="-4">Sempre<br>   
-                        <h2 class="fs-title">45. Entendo que uma equipe unida está mais perto da vitória.
-                        </h2>
-                        <input type="radio" name="45resposta" value="1">Nunca<br>      
-                        <input type="radio" name="45resposta" value="2">Pouco<br>      
-                        <input type="radio" name="45resposta" value="3">Muito<br>   
-                        <input type="radio" name="45resposta" value="4">Sempre<br>   
-                        <h2 class="fs-title">46. Tenho paciência para iniciantes.
-                        </h2>
-                        <input type="radio" name="46resposta" value="1">Nunca<br>      
-                        <input type="radio" name="46resposta" value="2">Pouco<br>      
-                        <input type="radio" name="46resposta" value="3">Muito<br>   
-                        <input type="radio" name="46resposta" value="4">Sempre<br>   
-                        <h2 class="fs-title">47. Quando não gosto da equipe, abandono a partida.
-                        </h2>
-                        <input type="radio" name="47resposta" value="-1">Nunca<br>      
-                        <input type="radio" name="47resposta" value="-2">Pouco<br>      
-                        <input type="radio" name="47resposta" value="-3">Muito<br>   
-                        <input type="radio" name="47resposta" value="-4">Sempre<br>   
-                        <h2 class="fs-title">48. Já desfiz amizades devido a discussões no jogo.
-                        </h2>
-                        <input type="radio" name="48resposta" value="-1">Nunca<br>      
-                        <input type="radio" name="48resposta" value="-2">Pouco<br>      
-                        <input type="radio" name="48resposta" value="-3">Muito<br>   
-                        <input type="radio" name="48resposta" value="-4">Sempre<br>   
-                        <h2 class="fs-title">49. Procuro brechas no jogo para melhorar o meu ranking.
-                        </h2>
-                        <input type="radio" name="49resposta" value="-1">Nunca<br>      
-                        <input type="radio" name="49resposta" value="-2">Pouco<br>      
-                        <input type="radio" name="49resposta" value="-3">Muito<br>   
-                        <input type="radio" name="49resposta" value="-4">Sempre<br>   
-                        <h2 class="fs-title">50. Me acho um bom exemplo de jogador.
-                        </h2>
-                        <input type="radio" name="50resposta" value="1">Nunca<br>      
-                        <input type="radio" name="50resposta" value="2">Pouco<br>      
-                        <input type="radio" name="50resposta" value="3">Muito<br>   
-                        <input type="radio" name="50resposta" value="4">Sempre<br>   
-                        <h2 class="fs-title">51. Aceito os resultados da partida quando sou derrotado.
-                        </h2>
-                        <input type="radio" name="51resposta" value="1">Nunca<br>      
-                        <input type="radio" name="51resposta" value="2">Pouco<br>      
-                        <input type="radio" name="51resposta" value="3">Muito<br>   
-                        <input type="radio" name="51resposta" value="4">Sempre<br>   
-                    </div> <input type="button" onclick="SubForm()" value="Submit" class="next action-button"  /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-                </fieldset>
+                    </h2>
+                    <input type="radio" name="43resposta" value="1">Nunca<br>      
+                    <input type="radio" name="43resposta" value="2">Pouco<br>      
+                    <input type="radio" name="43resposta" value="3">Muito<br>   
+                    <input type="radio" name="43resposta" value="4">Sempre<br>   
+                    <h2 class="fs-title">44. Divido a minha conta para alcançar níveis mais altos.
+                    </h2>
+                    <input type="radio" name="44resposta" value="-1">Nunca<br>      
+                    <input type="radio" name="44resposta" value="-2">Pouco<br>      
+                    <input type="radio" name="44resposta" value="-3">Muito<br>   
+                    <input type="radio" name="44resposta" value="-4">Sempre<br>   
+                    <h2 class="fs-title">45. Entendo que uma equipe unida está mais perto da vitória.
+                    </h2>
+                    <input type="radio" name="45resposta" value="1">Nunca<br>      
+                    <input type="radio" name="45resposta" value="2">Pouco<br>      
+                    <input type="radio" name="45resposta" value="3">Muito<br>   
+                    <input type="radio" name="45resposta" value="4">Sempre<br>   
+                    <h2 class="fs-title">46. Tenho paciência para iniciantes.
+                    </h2>
+                    <input type="radio" name="46resposta" value="1">Nunca<br>      
+                    <input type="radio" name="46resposta" value="2">Pouco<br>      
+                    <input type="radio" name="46resposta" value="3">Muito<br>   
+                    <input type="radio" name="46resposta" value="4">Sempre<br>   
+                    <h2 class="fs-title">47. Quando não gosto da equipe, abandono a partida.
+                    </h2>
+                    <input type="radio" name="47resposta" value="-1">Nunca<br>      
+                    <input type="radio" name="47resposta" value="-2">Pouco<br>      
+                    <input type="radio" name="47resposta" value="-3">Muito<br>   
+                    <input type="radio" name="47resposta" value="-4">Sempre<br>   
+                    <h2 class="fs-title">48. Já desfiz amizades devido a discussões no jogo.
+                    </h2>
+                    <input type="radio" name="48resposta" value="-1">Nunca<br>      
+                    <input type="radio" name="48resposta" value="-2">Pouco<br>      
+                    <input type="radio" name="48resposta" value="-3">Muito<br>   
+                    <input type="radio" name="48resposta" value="-4">Sempre<br>   
+                    <h2 class="fs-title">49. Procuro brechas no jogo para melhorar o meu ranking.
+                    </h2>
+                    <input type="radio" name="49resposta" value="-1">Nunca<br>      
+                    <input type="radio" name="49resposta" value="-2">Pouco<br>      
+                    <input type="radio" name="49resposta" value="-3">Muito<br>   
+                    <input type="radio" name="49resposta" value="-4">Sempre<br>   
+                    <h2 class="fs-title">50. Me acho um bom exemplo de jogador.
+                    </h2>
+                    <input type="radio" name="50resposta" value="1">Nunca<br>      
+                    <input type="radio" name="50resposta" value="2">Pouco<br>      
+                    <input type="radio" name="50resposta" value="3">Muito<br>   
+                    <input type="radio" name="50resposta" value="4">Sempre<br>   
+                    <h2 class="fs-title">51. Aceito os resultados da partida quando sou derrotado.
+                    </h2>
+                    <input type="radio" name="51resposta" value="1">Nunca<br>      
+                    <input type="radio" name="51resposta" value="2">Pouco<br>      
+                    <input type="radio" name="51resposta" value="3">Muito<br>   
+                    <input type="radio" name="51resposta" value="4">Sempre<br>   
+                </div> <input type="button" onclick="SubForm()" value="Submit" class="next action-button"  /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+            </fieldset>
 
-                                <!-- -->
-                               
-                                   <!-- <fieldset>
-                                    <div class="form-card">
-                                        <div class="row">
-                                            <div class="col-7">
-                                            </div>
-                                            <div class="col-5">
-                                                <h2 class="steps">Passo 3 - 4</h2>
-                                            </div>
-                                        </div> 
-                     </div> <input type="button" name="next" class="next action-button" value="Submit" /> 
-                    <button onclick="SubForm()">Submit</button>
+                            <!-- -->
+                            
+                                <!-- <fieldset>
+                                <div class="form-card">
+                                    <div class="row">
+                                        <div class="col-7">
+                                        </div>
+                                        <div class="col-5">
+                                            <h2 class="steps">Passo 3 - 4</h2>
+                                        </div>
+                                    </div> 
+                    </div> <input type="button" name="next" class="next action-button" value="Submit" /> 
+                <button onclick="SubForm()">Submit</button>
 <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
 <label>aqui aleatório</label> -->
 </fieldset>
-                <fieldset>
-                    <div class="form-card">
-                        <div class="row">
-                            <div class="col-7">
-                                <h2 class="fs-title">Final</h2>
-                            </div>
-                            <div class="col-5">
-                                <h1 class="steps">Encerramento</h1>
-                            </div>
-                        </div> <br><br>
-                        <h2 class="purple-text text-center"><strong>Resultado:</strong></h2> <br>
-                        <span class="score">Pontuação: </span><span id="score-value"></span>
-                        <div class="row justify-content-center">
+            <fieldset>
+                <div class="form-card">
+                    <div class="row">
+                        <div class="col-7">
+                            <h2 class="fs-title">Final</h2>
+                        </div>
+                        <div class="col-5">
+                            <h1 class="steps">Encerramento</h1>
+                        </div>
+                    </div> <br><br>
+                    <h2 class="purple-text text-center"><strong>Resultado:</strong></h2> <br>
+                    <span class="score">Pontuação: </span><span id="score-value"></span>
+                    <div class="row justify-content-center">
 
-                            <div id="resultado-fail">
-                                <h1>Ops! Parece que você não respondeu todas as questões!</h1>
-                                <span class="score">Pontuação: </span><span id="score-value"></span>
-                                <span>Se sua Pontuação for NaN quer dizer que você não respondeu todas</span>
-                            </div>
-                            <div id="resultado1">
-                                <h1>Teemo Chernobyl pegando fogo!</h1>
-                                <span class="score">Pontuação: </span><span id="score-value"></span>
-                            </div>
-                            <div id="resultado2">
-                                <h1>Quase uma pessoa decente!</h1>
-                                <span class="score">Pontuação: </span><span id="score-value"></span>
-                            </div>
-                            <div id="resultado3">
-                                <h1>É...quase um jogador normal</h1>
-                                <span class="score">Pontuação: </span><span id="score-value"></span>
-                            </div>
-                            <div id="resultado4">
-                                <h1>Caraca! Você é um jogador exemplar</h1>
-                                <span class="score">Pontuação: </span><span id="score-value"></span>
-                            </div>
-                        </div> <br><br>
-                    
-                    </div>
-                    
+                        <div id="resultado-fail">
+                            <h1>Ops! Parece que você não respondeu todas as questões!</h1>
+                            <span class="score">Pontuação: </span><span id="score-value"></span>
+                            <span>Se sua Pontuação for NaN quer dizer que você não respondeu todas</span>
+                        </div>
+                        <div id="resultado1">
+                            <h1>Teemo Chernobyl pegando fogo!</h1>
+                            <span class="score">Pontuação: </span><span id="score-value"></span>
+                        </div>
+                        <div id="resultado2">
+                            <h1>Quase uma pessoa decente!</h1>
+                            <span class="score">Pontuação: </span><span id="score-value"></span>
+                        </div>
+                        <div id="resultado3">
+                            <h1>É...quase um jogador normal</h1>
+                            <span class="score">Pontuação: </span><span id="score-value"></span>
+                        </div>
+                        <div id="resultado4">
+                            <h1>Caraca! Você é um jogador exemplar</h1>
+                            <span class="score">Pontuação: </span><span id="score-value"></span>
+                        </div>
+                    </div> <br><br>
+                
+                </div>
+                
 
 
-    </div>
+</div>
 </div>
 </div>
 <script>
 function SubForm (){
 $.ajax({
-    url:'https://api.apispreadsheets.com/data/10163/',
-    type:'post',
-    data:$("#msform").serializeArray(),
-    success: function(){
-        alert("Form Data Submitted :)")
-    },
-    error: function(){
-        alert("There was an error :(")
-    }
+url:'https://api.apispreadsheets.com/data/10163/',
+type:'post',
+data:$("#msform").serializeArray(),
+success: function(){
+    alert("Form Data Submitted :)")
+},
+error: function(){
+    alert("There was an error :(")
+}
 });
 }
 
@@ -658,14 +661,14 @@ var radios = document.getElementsByName('1resposta');
 console.log(radios)
 
 for (var i = 0, length = radios.length; i < length; i++) {
-  if (radios[i].checked) {
-    // do whatever you want with the checked radio
-    alert(radios[i].value);
-    console.log(radios[i].value)
+if (radios[i].checked) {
+// do whatever you want with the checked radio
+alert(radios[i].value);
+console.log(radios[i].value)
 
-    // only one radio can be logically checked, don't check the rest
-    break;
-  }
+// only one radio can be logically checked, don't check the rest
+break;
+}
 }
 
 </script>
