@@ -110,11 +110,12 @@ p {
 }
 
 .fs-title {
-    font-size: 25px;
+    font-size: 20px;
     color: #673AB7;
     margin-bottom: 15px;
     font-weight: normal;
-    text-align: left
+    text-align: left;
+    font-weight: 600;;
 }
 
 .purple-text {
@@ -149,7 +150,7 @@ p {
 #progressbar li {
     list-style-type: none;
     font-size: 15px;
-    width: 25%;
+    width: 15%;
     float: left;
     position: relative;
     font-weight: 400
@@ -157,22 +158,26 @@ p {
 
 #progressbar #account:before {
     font-family: FontAwesome;
-    content: "\f13e"
+    content: "OK"
 }
 
 #progressbar #personal:before {
     font-family: FontAwesome;
-    content: "\f007"
+    content: "OK"
 }
 
 #progressbar #payment:before {
     font-family: FontAwesome;
-    content: "\f030"
+    content: "OK"
 }
 
 #progressbar #confirm:before {
     font-family: FontAwesome;
-    content: "\f00c"
+    content: "OK"
+}
+#progressbar #end:before {
+    font-family: FontAwesome;
+    content: "OK"
 }
 
 #progressbar li:before {
@@ -217,7 +222,7 @@ p {
     object-fit: cover
 }
 .form-adjust {
-    max-with: 90%;
+    max-width: 90%;
     padding: 30px;
 }
 
