@@ -99,8 +99,13 @@ if(radioValue -= 20) {
 if(radioValue -= 20) {
     $('#resultado4').css('display','block');
 }
-document.getElementById('score-value').innerHTML = array1.reduce(reducer);
-//console.log("total is: " + total)
+
+
+document.getElementById('score-fail').innerHTML = array1.reduce(reducer);
+document.getElementById('score-value1').innerHTML = array1.reduce(reducer);
+document.getElementById('score-value2').innerHTML = array1.reduce(reducer);
+document.getElementById('score-value3').innerHTML = array1.reduce(reducer);
+document.getElementById('score-value4').innerHTML = array1.reduce(reducer);
     });
 });
 
@@ -528,29 +533,29 @@ crossorigin="anonymous"></script>
                         </div>
                     </div> <br><br>
                     <h2 class="purple-text text-center"><strong>Resultado:</strong></h2> <br>
-                    <span class="score">Pontuação: </span><span id="score-value"></span>
+                    
                     <div class="row justify-content-center">
 
                         <div id="resultado-fail">
                             <h1>Ops! Parece que você não respondeu todas as questões!</h1>
-                            <span class="score">Pontuação: </span><span id="score-value"></span>
+                            <span class="score">Pontuação: </span><span id="score-fail"></span>
                             <span>Se sua Pontuação for NaN quer dizer que você não respondeu todas</span>
                         </div>
                         <div id="resultado1">
                             <h1>Teemo Chernobyl pegando fogo!</h1>
-                            <span class="score">Pontuação: </span><span id="score-value"></span>
+                            <span class="score">Pontuação: </span><span id="score-value1"></span>
                         </div>
                         <div id="resultado2">
                             <h1>Quase uma pessoa decente!</h1>
-                            <span class="score">Pontuação: </span><span id="score-value"></span>
+                            <span class="score">Pontuação: </span><span id="score-value2"></span>
                         </div>
                         <div id="resultado3">
                             <h1>É...quase um jogador normal</h1>
-                            <span class="score">Pontuação: </span><span id="score-value"></span>
+                            <span class="score">Pontuação: </span><span id="score-value3"></span>
                         </div>
                         <div id="resultado4">
                             <h1>Caraca! Você é um jogador exemplar</h1>
-                            <span class="score">Pontuação: </span><span id="score-value"></span>
+                            <span class="score">Pontuação: </span><span id="score-value4"></span>
                         </div>
                     </div> <br><br>
                 
